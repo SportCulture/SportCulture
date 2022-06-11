@@ -1,22 +1,3 @@
-<?php
-
-// use PHPMailer\PHPMailer\PHPMailer;
-
-// require 'vendor/autoload.php';
-// $mail = new PHPMailer();
-
-// $mail->isSMTP();
-// $mail->Host       = 'smtp.gmail.com';
-// $mail->SMTPAuth   = true;
-// $mail->Username   = 'hodhouda140@gmail.com';
-// $mail->Password   = '140hh140hh';
-// $mail->SMTPSecure = 'ssl';
-// $mail->Port       = 465;
-
-// $mail->isHTML(true);
-// $mail->CharSet = 'UTF-8';
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,15 +67,6 @@
       $emailE = $_POST['emailE'];
       $contenu = $_POST['contenu'];
       if (($nomE != "") && ($emailE != "") && ($contenu != "")) {
-        ///////////////////////////////////////////////////////////////
-        // $mail->setFrom('hodhouda140@gmail.com', 'BEZAI BEZAI');
-        // $mail->addAddress($emailE);
-        // $mail->Subject = 'SportCulture msg de:' . $nomE;
-        // $mail->Body    = $contenu;
-        // $mail->send();
-
-
-        //////////////////////////////////////////////////////////////////////////
         echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>Le message envoyé
         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button> </div>";
       } else {
