@@ -93,7 +93,7 @@
           foreach ($verifier2 as $typ) {
             $typeA = $typ['typeA'];
           }
-          if ((($typeA == "Sportif") && ($_FILES['fichier']['name'] != "")) || (($typeA == "Culturel") && ($_FILES['fichier']['name'] == "")) || (($typeA == "scientifique") && ($_FILES['fichier']['name'] == ""))) {
+          if ((($typeA == "Sportif") && ($_FILES['fichier']['name'] != "")) || (($typeA == "Culturel") && ($_FILES['fichier']['name'] == "")) || (($typeA == "Scientifique") && ($_FILES['fichier']['name'] == ""))) {
             $redandance = $database->prepare("SELECT * FROM inscrir WHERE codeA LIKE :codeA AND numCart LIKE :numCart");
             $redandance->bindParam("numCart", $numCart);
             $redandance->bindParam("codeA", $codeA);
@@ -183,10 +183,10 @@
       <input type='number' id='numCart' name='numCart' placeholder='entrer votre numéro (10 Chiffres)' class='form-control'/><br/>
       <label for='nomE'>Nom étudiant</label><span style='color:#eb0000;'> *</span>
       <input type='text' id='nomE' name='nomE' placeholder='entrez votre nom' class='form-control' maxlength='35'/><br/>
-      sel<label for='preE'>Prénom étudiant</label><span style='color:#eb0000;'> *</span>
+      <label for='preE'>Prénom étudiant</label><span style='color:#eb0000;'> *</span>
       <input type='text' id='preE' name='preE' placeholder='entrez votre prénom' class='form-control' maxlength='35'/><br/>
       <label for='codeA'>Activité</label><span style='color:#eb0000;'> *</span>";
-    echo '<select id="codeA" name="codeA" class="form-ect" aria-label="Default select example">';
+    echo '<select id="codeA" name="codeA" class="form-select" aria-label="Default select example">';
     echo "<option selected>L'activité</option>";
     foreach ($affA as $contenu) {
       echo '<option value="' . $contenu['codeA'] . '">' . $contenu['nomA'] . '</option>';
