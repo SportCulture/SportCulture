@@ -21,7 +21,7 @@
         <span>Restons en contact</span>
         <a href='CONTACTER.php' target='_blank'><div><img src='social/email.png' alt=''>Nous contacter</div></center></a>
         <a href='https://web.facebook.com/ru2000litschlef' target='_blank'><div><img src='social/facebook.png' alt=''>La cité Univercitaire Chlef-Sidi Amar</div></center></a>
-        <a href='https://www.instagram.com/explore/locations/520768537/sidi-amar/' target='_blank'><div><img src='social/insta.png' alt=''>@citeuniversitairechlef</div></center></a>
+        <a href='' target='_blank'><div><img src='social/insta.png' alt=''>@citeuniversitairechlef</div></center></a>
         <a href='' target='_blank'><div><img src='social/twittre.png' alt=''>cucs_dz</div></center></a>
       </div>
     </footer>";
