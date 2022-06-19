@@ -39,11 +39,6 @@
       $recharche_Evenement = $database->prepare("SELECT * FROM `evenement` WHERE nomEV LIKE '%$chercher%' OR actEV IN (SELECT codeA FROM `activite` WHERE nomA LIKE '%$chercher%')");
       $recharche_Evenement->execute();
 
-      $recharche_A = $database->prepare("SELECT * FROM `activite`");
-      $recharche_A->execute();
-      $recharche_E = $database->prepare("SELECT * FROM `evenement`");
-      $recharche_E->execute();
-
       $nbr_Act = $recharche_Activite->rowcount();
       $nbr_EV = $recharche_Evenement->rowcount();
 
