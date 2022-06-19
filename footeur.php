@@ -1,7 +1,4 @@
-<?php
-      
-
-    echo "<footer class='bg-dark'>
+    <footer class='bg-dark'>
       <div id='foot1'>
         <img src='logo/icon-site-1.png' alt='' height='150px'>
         <div>
@@ -24,7 +21,4 @@
         <a href='' target='_blank'><div><img src='social/insta.png' alt=''>@citeuniversitairechlef</div></center></a>
         <a href='' target='_blank'><div><img src='social/twittre.png' alt=''>cucs_dz</div></center></a>
       </div>
-    </footer>";
-
-      
-?>
+    </footer>
