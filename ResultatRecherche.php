@@ -180,6 +180,8 @@
               echo "</div>";
             }
           }
+        } else {
+        echo "<div class='cadre'><center>Aucun Résultats</center></div>";
         }
 
         echo "</div>";
