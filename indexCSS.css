@@ -1,0 +1,353 @@
+:root {
+  --hamich: 3%;
+  --coleurPublic: rgb(44, 42, 42);
+  --coleurPrincipale: rgb(255, 255, 255);
+  --coleurSecondaire: #198754;
+  --font-para: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --font-titres: cursive;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+/*--------------------------------------  Partie Navbar  -----------------------------------------------------*/
+/*-------------------------------------- --------------- -----------------------------------------------------*/
+/*-------------------------------------- --------------- -----------------------------------------------------*/
+.couleur-h {
+  background: linear-gradient(to right, #77a1d3, #79cbca, #f4caf8);
+}
+.couleur-t {
+  background: linear-gradient(to right, #77a1d3, #79cbca, #d5aad6);
+}
+.E {
+  font-family: var(--font-titres);
+  font-size: 1.4rem;
+}
+#logo {
+  height: 80px;
+}
+
+#fix {
+  font-weight: bold;
+  font-size: larger;
+  position: fixed;
+  font-family: var(--font-para);
+  right: 2rem;
+  bottom: 2rem;
+  padding: auto 10px;
+}
+#fix span a {
+  text-decoration: none;
+  font-size: 4rem;
+  counter-reset: var(--coleurSecondaire);
+}
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+.logo img {
+  position: absolute;
+  border-radius: 50%;
+  top: 37%;
+  height: 100%;
+}
+#logo-1 {
+  left: 2%;
+}
+#logo-2 {
+  right: 2%;
+}
+/*--------------------------------------  Partie bouton menu  ---------------------------------------------------*/
+/*-------------------------------------- -------------------- -----------------------------------------------------*/
+/*-------------------------------------- -------------------- -----------------------------------------------------*/
+.menu-bouton {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  /* dernier instrections rende les bouton de méme ligne avec le fomulaire de recherche */
+}
+.menu-bouton > li {
+  list-style-type: none;
+  margin: 20px 10px 0px 10px;
+}
+.menu-bouton .menu {
+  background-color: transparent;
+  color: var(--coleurPublic);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.4rem 0.9rem 0.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--coleurPublic);
+  transition: 0.4s;
+  font-size: 0.9rem;
+}
+.menu-bouton .menu:hover {
+  background-color: var(--coleurPublic);
+  border: 2px solid transparent;
+  color: var(--coleurPrincipale);
+}
+.conteneur-liste {
+  position: relative;
+  transition: 100s;
+}
+#liste li {
+  list-style-type: none;
+  margin: 12.5px 10px;
+}
+#liste a {
+  border: 1px solid var(--coleurPrincipale);
+  padding: 4px 34px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  color: var(--coleurPrincipale);
+  transition: 0.4s;
+}
+#liste {
+  height: 116px;
+  border-radius: 14px;
+  background-color: var(--coleurPublic);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 36px;
+  left: 40px;
+  display: none;
+}
+#liste::before {
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid var(--coleurPublic);
+  height: 1px;
+  width: 10px;
+  position: absolute;
+  left: 30px;
+  top: -6px;
+}
+.conteneur-liste:hover #liste {
+  display: block;
+}
+.part {
+  transition: 100s;
+}
+.conteneur-liste:hover .part {
+  background-color: var(--coleurPublic);
+  border: 2px solid transparent;
+  color: var(--coleurPrincipale);
+}
+#liste a:hover {
+  background-color: var(--coleurPrincipale);
+  border: 1px solid transparent;
+  color: var(--coleurPublic);
+}
+
+.menu-bouton-b7th {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+/*------------------------------------- La forme de contenant générale  -----------------------------------------------------*/
+/*------------------------------------- ------------------------------- -----------------------------------------------------*/
+/*------------------------------------- ------------------------------- -----------------------------------------------------*/
+main {
+  border-top: var(--coleurPublic) 1px solid;
+  border-bottom: var(--coleurPublic) 1px solid;
+  background: linear-gradient(to right, #77a1d3, #79cbca, #d5aad6);
+}
+.cadre {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: var(--coleurPrincipale) 1px solid;
+  margin: 2.5rem var(--hamich);
+  border-radius: 8px;
+  padding: 1% 2%;
+}
+/*-------------------------------------------------  Premier contenu  -----------------------------------------------------*/
+/*------------------------------------------------- ----------------- -----------------------------------------------------*/
+/*------------------------------------------------- ----------------- -----------------------------------------------------*/
+
+.boit-act {
+  padding-bottom: 0%;
+  padding-bottom: 4px;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: grid;
+  gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: 350px;
+  overflow-x: auto;
+}
+.boit-act > div {
+  overflow-y: auto;
+  height: 350px;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+/*-------------------------------------  Deuxième contenu  ----------------------------------------------------*/
+/*------------------------------------- ----------------- -----------------------------------------------------*/
+/*------------------------------------- ----------------- -----------------------------------------------------*/
+h2,
+h5 {
+  font-size: 2.1rem;
+  font-family: var(--font-titres);
+}
+#cite {
+  border-radius: 10px;
+  width: 70%;
+  height: 10%;
+  margin: 1% 15%;
+}
+.lieu {
+  border: var(--coleurPublic) solid 1px;
+  align-content: center;
+  padding-bottom: 5%;
+  background-color: rgba(226, 197, 139, 0.45);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.lieu img {
+  width: 90%;
+  margin: 5%;
+}
+.tous-scrol {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+/*-------------------------------------  Troisième contenu  ----------------------------------------------------*/
+/*------------------------------------- ------------------- -----------------------------------------------------*/
+/*------------------------------------- ------------------- -----------------------------------------------------*/
+.tous-scrol-even {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 14px;
+  grid-auto-columns: 400px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.evenement {
+  border: var(--coleurPublic) solid 1px;
+  background: linear-gradient(-225deg, #7de2fc 0%, #b9b6e5 100%);
+  border: var(--coleurPrincipale) 1px solid;
+  padding-bottom: 5%;
+  overflow-y: auto;
+  height: 470px;
+}
+.evenement img {
+  width: 95%;
+  margin-top: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.evenement .btn {
+  width: 75%;
+}
+/*---------------------------------------------  Règlement interne  ------------------------------------------------*/
+/*--------------------------------------------- ------------------- ------------------------------------------------*/
+/*--------------------------------------------- ------------------- ------------------------------------------------*/
+h6 span {
+  color: var(--coleurSecondaire);
+  font-size: 1.4rem;
+  word-spacing: 0.3rem;
+}
+/*---------------------------------------------  Page de recherche  ------------------------------------------------*/
+/*--------------------------------------------- ------------------- ------------------------------------------------*/
+/*--------------------------------------------- ------------------- ------------------------------------------------*/
+.rechacher {
+  display: flex;
+  flex-direction: column;
+}
+
+/*------------------------------------------  Page de l'emploi de temps  ---------------------------------------------*/
+/*------------------------------------------ --------------------------- ---------------------------------------------*/
+/*------------------------------------------ --------------------------- ---------------------------------------------*/
+table th {
+  font-family: var(--font-titres);
+}
+/*----------------------------------------------------  footeur  -----------------------------------------------------*/
+/*---------------------------------------------------- --------- -----------------------------------------------------*/
+/*---------------------------------------------------- --------- -----------------------------------------------------*/
+footer {
+  padding: 0 4%;
+  border: solid 1px var(--coleurPublic);
+  justify-items: center;
+  color: white;
+  padding-bottom: 4%;
+}
+footer > div {
+  justify-content: center;
+}
+#foot1 {
+  padding: 5% 4%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#foot1 div {
+  width: 40%;
+  margin-top: 1%;
+}
+#foot1 img {
+  margin: 1% 2rem;
+  cursor: pointer;
+}
+#foot1 div h1 {
+  font-size: 1.8rem;
+  font-family: var(--font-para);
+  word-spacing: 0.6rem;
+  margin-top: 1.2rem;
+}
+#foot1 div h4 {
+  font-family: var(--font-titres);
+  font-size: large;
+  margin-top: 1.1rem;
+}
+/*-------------------------------------- ------div2------ -----------------------------------------------------*/
+#foot2 h2 {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-family: var(--font-para);
+}
+#foot2 p {
+  text-align: start;
+}
+/*-------------------------------------- ------div3------ -----------------------------------------------------*/
+#foot3 span {
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  padding-bottom: 1rem;
+  font-family: var(--font-titres);
+}
+#foot3 div {
+  border: #77a1d3 1px solid;
+  border-radius: 50px;
+  padding: 1% 0;
+  margin: 2rem 4vw;
+  transition: 0.4s;
+}
+#foot3 div:hover {
+  border: #fff0ff 1px solid;
+}
+#foot3 div img {
+  height: 50px;
+  margin: 0px auto;
+  padding: 0 1rem;
+}
+#foot3 a {
+  text-decoration: none;
+  color: var(--coleurPrincipale);
+  font-size: 1.2rem;
+  font-family: var(--font-para);
+}
